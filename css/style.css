@@ -1846,9 +1846,9 @@ form label {
   color: red;
   z-index:1;
   cursor: pointer;
-  line_height: 38px;
+  line-height: 38px;
   text-align: center;
-  border=radius: 50%;
+  border-radius: 50%;
   box-shadow: 0 0 2px #4444;
   text-shadow: 0 0 1 px #4444;
 }
