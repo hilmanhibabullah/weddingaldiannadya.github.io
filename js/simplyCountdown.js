@@ -294,7 +294,7 @@ var x = setInterval(function(){
     var minutes = Math.floor((distance % (1000*60*60)) / (1000*60) );
     var seconds = Math.floor((distance % (1000*60))/1000);
 
-    document.getElementById("demo").innerHTML = days +" days " +hours+ " hours " +minutes+ " minutes " +seconds+ " seconds ";
+    document.getElementById("demo").innerHTML = days +" days " +hours+ " hours " +minutes+ " minutes " +seconds+ " seconds to main ceremony";
 
     if(distance < 0){
         clearInterval(x);
