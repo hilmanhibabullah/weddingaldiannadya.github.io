@@ -203,7 +203,7 @@
 //                     secondsLeft = secondsLeft % 36000;
 
 //                     minutes = parseInt(secondsLeft / 600, 10);
-//                     seconds = parseInt(secondsLeft % 600, 10);
+//                     seconds = parseInt(secondsLeft % 60, 10);
 //                 } else {
 //                     days = 0;
 //                     hours = 0;
@@ -298,5 +298,23 @@ var x = setInterval(function(){
 
     if(distance < 0){
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "acara"
+        document.getElementById("demo").innerHTML = "Happy Wedding Aldian&Nadya"
     }},1000);
+
+    exports.simplyCountdown = simplyCountdown;
+    (window);
+    
+    /*global $, jQuery, simplyCountdown*/
+    if (window.jQuery) {
+        (function ($, simplyCountdown) {
+            'use strict';
+    
+            function simplyCountdownify(el, options) {
+                simplyCountdown(el, options);
+            }
+    
+            $.fn.simplyCountdown = function (options) {
+                return simplyCountdownify(this.selector, options);
+            };
+        }(jQuery, simplyCountdown));
+    }
