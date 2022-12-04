@@ -46,6 +46,17 @@ body {
   content: "";
 }
 
+#btn{
+  border: none;
+  width:40px;
+  height: 40px;
+  cursor:pointer;
+  background-image: url("play.png");
+}
+#play{
+  background-image: url('images/play.png');
+}
+
 a {
   color: #F14E95;
   -webkit-transition: 0.5s;
